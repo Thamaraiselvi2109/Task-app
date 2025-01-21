@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+<h1>Deployment Link : https://alteroffice-thamarai.netlify.app/sign-in </h1>
+<h3>Task Brief</h3>
+Develop a responsive task management application using React that empowers users to efficiently create, organize, and track their tasks. The application should feature user authentication via Firebase, allowing users to sign in with Google. Users should be able to create, edit, and delete tasks, categorize them (e.g., work, personal), and set due dates. Additionally, implement drag-and-drop functionality for task organization, sorting options based on due dates, and a board/list view to enhance user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The application should prioritize an intuitive user interface, ensuring that users can easily navigate through their tasks and access essential features. Utilize React Query or an alternate solution for effective data fetching and state management, and ensure the design is responsive, adapting seamlessly to various screen sizes.
 
-Currently, two official plugins are available:
+Design: https://www.figma.com/design/IYRypV3Qf76Qppl6knbm2U/Task-Management?node-id=0-1&t=lWNc2UtHkUC0Z5qS-1
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Figma Download Link: https://drive.google.com/file/d/1FoNEmPLAaVMfj-rcQoJITnCHb78EdZeR/view?usp=sharing
 
-## Expanding the ESLint configuration
+Features
+1. User Authentication:
+Implement user authentication using Firebase Authentication with Google Sign-In.
+Allow users to manage their profiles.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Task Management:
+Enable users to create, edit, and delete tasks.
+Implement task categorization (e.g., work, personal) and tagging for better organization.
+Allow users to set due dates for tasks.
 
-- Configure the top-level `parserOptions` property like this:
+5. File Attachments:
+Enable users to attach files or documents to tasks for additional context.
+Implement a file upload feature in the task creation/editing form and display the attached files in the task detail view.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+7. Board/List View:
+Allow users to switch between a board view (Kanban-style) and a list view for their tasks.
