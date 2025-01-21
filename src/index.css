@@ -108,7 +108,7 @@ body {
     }
 
     .google-btn {
-        @apply flex px-10 py-3 bg-[#292929] text-[white] gap-3 rounded-2xl my-3 font-medium;
+        @apply flex px-10 py-3 bg-[#292929] text-[white] z-30 gap-3 rounded-2xl my-3 font-medium;
     }
 
     /* navbar component */

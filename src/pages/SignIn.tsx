@@ -38,7 +38,7 @@ export const SignIn = () => {
                         <div className="sign-left">
                             <h3 className="title"><img src={task} alt={task} /> TaskBuddy</h3>
                             <p className="texts">Streamline your workflow and track progress <br />effortlessly with our all-in-one task management app.</p>
-                            <button className="google-btn" onClick={handleGoogleSignIn}><img src={google} alt={task} />{statusIn === 'loading' ? 'Signing in...' : 'Continue with Google'}</button>
+                            <button className="google-btn" onClick={handleGoogleSignIn}><img src={google} alt={task} />{statusIn === 'loading' ? 'Signing in with Google' : 'Continue with Google'}</button>
                         </div>
                     </div>
                 </div>
